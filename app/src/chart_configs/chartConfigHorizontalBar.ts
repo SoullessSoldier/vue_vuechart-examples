@@ -21,4 +21,8 @@ export const data = {
         }
     ]
 }
-
+export const options: any = {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+}
