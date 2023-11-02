@@ -15,9 +15,14 @@ import {
   LinearScale
 } from "chart.js"
 import { Bar } from 'vue-chartjs'
-import {data, options} from "@/chart_configs/chartConfigHorizontalBar"
+import {data} from "@/chart_configs/chartConfigHorizontalBar"
+import {CoreChartOptions} from "chart.js/dist/types";
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
-
+const options: CoreChartOptions = {
+  indexAxis: 'y',
+  responsive: true,
+  maintainAspectRatio: false,
+}
 </script>
 
 <style scoped>
