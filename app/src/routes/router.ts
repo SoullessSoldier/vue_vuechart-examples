@@ -1,4 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router";
+import {BASE_URL} from "@/env";
 import BasePage from "@/components/chart_pages/BasePage.vue";
 import BarPage from "@/components/chart_pages/BarPage.vue";
 import PiePage from "@/components/chart_pages/PiePage.vue";
@@ -9,6 +10,7 @@ import DoughnutPage from "@/components/chart_pages/DoughnutPage.vue";
 import LinePage from "@/components/chart_pages/LinePage.vue";
 import PolarAreaPage from "@/components/chart_pages/PolarAreaPage.vue";
 import ScatterPage from "@/components/chart_pages/ScatterPage.vue";
+
 
 const routes = [
     {
@@ -64,7 +66,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory(BASE_URL),
     routes,
 });
 
