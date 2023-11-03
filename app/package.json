@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build && mv dist ../docs || move dist ../docs",
+    "build": "vue-tsc && vite build && mv dist ../docs || ren dist docs && move docs ../",
     "preview": "vite preview"
   },
   "dependencies": {
