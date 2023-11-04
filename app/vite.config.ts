@@ -11,5 +11,5 @@ export default defineConfig({
     },
     extensions: ['.js', '.ts']
   },
-  //base: '/vue_vuechart-examples/',
+  base: './',
 })
