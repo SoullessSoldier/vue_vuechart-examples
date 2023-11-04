@@ -1,4 +1,4 @@
-import { createWebHistory, createRouter } from "vue-router";
+import { createWebHashHistory, createRouter } from "vue-router";
 import {BASE_URL} from "@/env";
 import BasePage from "@/components/chart_pages/BasePage.vue";
 import BarPage from "@/components/chart_pages/BarPage.vue";
@@ -66,7 +66,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHistory(BASE_URL),
+    history: createWebHashHistory(BASE_URL),
     routes,
 });
 
